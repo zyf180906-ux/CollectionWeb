@@ -1,0 +1,17 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.zyf.portfolio
+productName: 张烨沣 AIGC 导演作品集
+files:
+  - filter:
+      - dist/**/*
+      - electron-main.cjs
+      - package.json
+      - public/**/*
+win:
+  target:
+    - target: portable
+      arch:
+        - x64
+electronVersion: 45.2.2
