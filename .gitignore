@@ -1,0 +1,4 @@
+node_modules
+dist
+_package
+public/assets/*.mp4

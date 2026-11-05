@@ -1,0 +1,4 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>播放作品</title><style>body{margin:0;background:#090a0b;color:#eee;font-family:Arial;display:flex;align-items:center;justify-content:center;height:100vh}.wrap{width:min(1100px,92vw)}video{width:100%;max-height:78vh;background:#111}.back{display:inline-block;color:#d9ff59;margin-bottom:20px;text-decoration:none;font-size:14px}</style></head><body><div class="wrap"><a class="back" href="javascript:history.back()">← 返回作品集</a><video id="player" controls autoplay controlsList="nodownload noplaybackrate" disablePictureInPicture oncontextmenu="return false"></video></div><script>const p=new URLSearchParams(location.search).get('video');if(p)document.getElementById('player').src='/assets/'+p;document.addEventListener("contextmenu",e=>e.preventDefault());document.addEventListener("dragstart",e=>e.preventDefault());</script></body></html>
+
+
+
